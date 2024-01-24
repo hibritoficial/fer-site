@@ -1,11 +1,7 @@
 <template>
-  <v-app>
-    <v-main>
-      <HelloWorld />
-    </v-main>
-  </v-app>
+  <Home />
 </template>
 
 <script setup>
-  import HelloWorld from '@/components/HelloWorld.vue'
+import Home from '@/components/Home.vue'
 </script>
