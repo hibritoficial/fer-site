@@ -36,7 +36,7 @@
 
         <div :class="smAndDown ? 'w-100 pl-2 pt-4' : ''">
           <h3 class="text-secondary font-weight-medium">Sobre nós</h3>
-          <h6 class="text-secondary font-weight-medium" :class="smAndDown ? 'mt-2' : ''"><span
+          <h6 class="text-secondary font-weight-medium" :class="smAndDown ? 'mt-2 pr-6' : ''"><span
               class="text-quartiary font-weight-bold">FERTVIDA</span> é uma linha de aditivos e fertilizantes orgânicos,
             com uma fórmula inovadora que contém complexos
             enzimáticos, carboidratos, proteínas e quitinas.</h6>
