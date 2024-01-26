@@ -24,7 +24,8 @@
 
             <div>
               <v-btn size="x-small" style="border-width: 1px; border-color: white;"
-                :class="smAndDown ? 'mt-5 px-5 bg-transparent text-white rounded-pill' : ''">SAIBA MAIS</v-btn>
+                :class="smAndDown ? 'mt-5 px-5 bg-transparent text-white rounded-pill' : ''" @click="scrollToSection('sobre')">SAIBA
+                MAIS</v-btn>
             </div>
           </div>
         </v-img>
@@ -99,25 +100,29 @@
       </div>
 
       <div class="d-flex" :class="smAndDown ? 'mb-6' : ''">
-
-        <div :class="smAndDown ? 'w-100 pl-2 pt-4' : ''">
-          <h3 class="text-primary font-weight-medium">O Nosso Produto</h3>
-          <h6 class="text-secondary font-weight-medium" :class="smAndDown ? 'mt-2 pr-6' : ''">Os nossos produtos aceleram
-            a decomposição, fornecem nutrientes essenciais e promovem a sustentabilidade agrícola.</h6>
-
-          <div align="center" :class="smAndDown ? 'w-75 mt-8' : ''">
-            <h6 style="font-size: 8px;">Obtenha de forma <span class="text-quartiary">GRATUITA </span> a ficha técnica do
-              nosso produto!</h6>
-            <v-btn size="x-small" class="rounded-pill bg-quartiary mt-2 px-5">
-              <h6 class="text-white">FAZER DONWLOAD</h6>
-            </v-btn>
+        
+          <div id="sobre" :class="smAndDown ? 'w-100 pl-2 pt-4' : ''">
+            <h3 class="text-primary font-weight-medium">O Nosso Produto</h3>
+            <h6 class="text-secondary font-weight-medium" :class="smAndDown ? 'mt-2 pr-6' : ''">Os nossos produtos
+              aceleram
+              a decomposição, fornecem nutrientes essenciais e promovem a sustentabilidade agrícola.</h6> 
+       
+            <div align="center" :class="smAndDown ? 'w-75 mt-8' : ''">
+              <h6 style="font-size: 8px;">Obtenha de forma <span class="text-quartiary">GRATUITA </span> a ficha técnica
+                do
+                nosso produto!</h6>
+              <v-btn size="x-small" class="rounded-pill bg-quartiary mt-2 px-5">
+                <h6 class="text-white">FAZER DONWLOAD</h6>
+              </v-btn>
+            </div>
           </div>
-        </div>
 
-        <div :class="smAndDown ? 'w-100 mr-2 mt-3' : ''">
-          <v-img src="/public/fotoproduto.jpg"></v-img>
-        </div>
+          <div :class="smAndDown ? 'w-100 mr-2 mt-3' : ''">
+            <v-img src="/public/fotoproduto.jpg"></v-img>
+          </div> 
+        
       </div>
+    
 
       <div class="jsutify-center align-center text-center" :class="smAndDown ? 'w-100' : ''">
         <v-img src="/public/capa3.jpg" align="center" cover>
@@ -134,7 +139,7 @@
           </div>
 
           <div :class="smAndDown ? 'w-25 mt-8' : ''">
-            <v-img src="/public/logo.png"  />
+            <v-img src="/public/logo.png" />
           </div>
 
         </v-img>
@@ -169,5 +174,17 @@ import { useDisplay } from 'vuetify';
 
 const { smAndDown, smAndUp, lgAndUp, mdAndUp } = useDisplay()
 
+const scrollToSection = (sectionId) => {
+  const element = document.getElementById(sectionId);
+
+  if (element) {
+    const offset = 200; // Ajuste aqui conforme necessário
+    const elementPosition = element.getBoundingClientRect().top + window.scrollY;
+    window.scrollTo({
+      top: elementPosition - offset,
+      behavior: 'smooth',
+    });
+  }
+};
 
 </script>
