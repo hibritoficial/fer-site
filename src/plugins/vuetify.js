@@ -21,6 +21,7 @@ export default createVuetify({
           secondary: '#555555', // Cinza Meio Claro
           terciary: 'EABA0B', // Amarelo
           quartiary: '#F99605', // Laranja
+          quintenary: '#26B328', // Verde
         },
       },
     },

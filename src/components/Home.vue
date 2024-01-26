@@ -3,8 +3,8 @@
     <v-main>
 
       <div>
-        <v-img src="/public/capa1.jpg">
-          <div class="bloco1" style="line-height: 18px;" align="center"
+        <v-img src="/public/capa1.jpg" cover>
+          <div class="transparente1" style="line-height: 18px;" align="center"
             :class="smAndDown ? 'w-50 h-100 pt-2' : 'w-50 h-100'">
             <h5 class="text-white" :class="smAndDown ? 'font-weight-medium' : ''">DESCUBRA</h5>
             <h5 class="text-white" :class="smAndDown ? 'font-weight-medium' : ''">O <span
@@ -89,7 +89,7 @@
               equilibrado e resistente.</h6>
           </div>
         </div>
-          
+
 
         <div :class="smAndDown ? 'pt-10 pb-10' : ''">
           <v-btn size="small" class="bg-quartiary rounded-pill px-16">
@@ -105,17 +105,39 @@
           <h6 class="text-secondary font-weight-medium" :class="smAndDown ? 'mt-2 pr-6' : ''">Os nossos produtos aceleram
             a decomposição, fornecem nutrientes essenciais e promovem a sustentabilidade agrícola.</h6>
 
-          <div align="center" :class="smAndDown ? 'w-75 mt-8' : ''" >
-            <h6 style="font-size: 8px;">Obtenha de forma <span class="text-quartiary">GRATUITA </span> a ficha técnica do nosso produto!</h6>
+          <div align="center" :class="smAndDown ? 'w-75 mt-8' : ''">
+            <h6 style="font-size: 8px;">Obtenha de forma <span class="text-quartiary">GRATUITA </span> a ficha técnica do
+              nosso produto!</h6>
             <v-btn size="x-small" class="rounded-pill bg-quartiary mt-2 px-5">
               <h6 class="text-white">FAZER DONWLOAD</h6>
             </v-btn>
           </div>
         </div>
 
-        <div :class="smAndDown ? 'w-75 mr-2 mt-3' : ''">
-          <v-img src="/public/capa2.png"></v-img>
+        <div :class="smAndDown ? 'w-100 mr-2 mt-3' : ''">
+          <v-img src="/public/fotoproduto.jpg"></v-img>
         </div>
+      </div>
+
+      <div class="jsutify-center align-center text-center" :class="smAndDown ? 'w-100' : ''">
+        <v-img src="/public/capa3.jpg" align="center" cover>
+
+          <div class="transparente2" :class="smAndDown ? 'h-50 mt-16 pt-5' : ''">
+            <h1 class="font-weight-medium text-white">FERT<span class="text-quintenary">VIDA</span></h1>
+            <p class="text-terciary"><em>O futuro sustentável para a sua plantação.</em></p>
+
+            <div :class="smAndDown ? 'mt-5' : ''">
+              <v-btn class="rounded-pill bg-quartiary">
+                <h6 class="text-white">FALE CONOSCO</h6>
+              </v-btn>
+            </div>
+          </div>
+
+          <div :class="smAndDown ? 'w-25 mt-8' : ''">
+            <v-img src="/public/logo.png"  />
+          </div>
+
+        </v-img>
       </div>
 
 
@@ -128,8 +150,12 @@
 </template>
 
 <style scoped>
-.bloco1 {
+.transparente1 {
   background-color: #333333ab;
+}
+
+.transparente2 {
+  background-color: rgba(0, 0, 0, 0.822)
 }
 
 .degrade {
