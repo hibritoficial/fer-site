@@ -178,12 +178,12 @@
               </v-col>
 
               <v-col cols="12" md="10">
-                <v-text-field v-model="Senha" :rules="senhaRules" label="WhatsApp" color="quartiary"
+                <v-text-field v-model="WhatsApp" :rules="WhatsAppRules" label="WhatsApp" color="quartiary"
                   hint="Informe seu WhatsApp"></v-text-field>
               </v-col>
 
               <v-col cols="12" md="10">
-                <v-text-field v-model="RepitirSenha" :rules="repitirsenhaRules" label="Mensagem" color="quartiary"
+                <v-text-field v-model="Mensagem" :rules="MensagemRules" label="Mensagem" color="quartiary"
                   hint="Informe sua mensagem"></v-text-field>
               </v-col>
             </v-row>
@@ -262,8 +262,8 @@ const emailRules = ref([
   },
 ]);
 
-const Senha = ref('');
-const senhaRules = ref([
+const WhatsApp = ref('');
+const WhatsAppRules = ref([
   value => {
     if (value) return true;
     return 'É necessário inserir um Número';
@@ -274,8 +274,8 @@ const senhaRules = ref([
   },
 ]);
 
-const RepitirSenha = ref('');
-const repitirsenhaRules = ref([
+const Mensagem = ref('');
+const MensagemRules = ref([
   value => {
     if (value) return true;
     return 'É necessário inserir uma Mensagem.';
