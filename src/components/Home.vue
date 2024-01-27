@@ -24,13 +24,14 @@
 
             <div>
               <v-btn size="x-small" style="border-width: 1px; border-color: white;"
-                :class="smAndDown ? 'mt-5 px-5 bg-transparent text-white rounded-pill' : ''" @click="scrollToSection('sobre')">SAIBA
+                :class="smAndDown ? 'mt-5 px-5 bg-transparent text-white rounded-pill' : ''" href="#sobre">SAIBA
                 MAIS</v-btn>
             </div>
           </div>
         </v-img>
       </div>
-
+       
+      <div id="sobre" fluid>
       <div class="d-flex" :class="smAndDown ? 'mb-3' : ''">
         <div :class="smAndDown ? 'w-100 pl-2 pt-4' : ''">
           <h3 class="text-primary font-weight-medium">Sobre nós</h3>
@@ -50,7 +51,8 @@
           <v-img src="/public/fotosobre.png"></v-img>
         </div>
       </div>
-
+    </div>
+        
       <div class="degrade bg-primary" align="center">
         <div class="text-terciary" style="line-height: 25px;" :class="smAndDown ? 'pt-16' : ''">
           <h2>NOSSO</h2>
@@ -101,7 +103,7 @@
 
       <div class="d-flex" :class="smAndDown ? 'mb-6' : ''">
         
-          <div id="sobre" :class="smAndDown ? 'w-100 pl-2 pt-4' : ''">
+          <div :class="smAndDown ? 'w-100 pl-2 pt-4' : ''">
             <h3 class="text-primary font-weight-medium">O Nosso Produto</h3>
             <h6 class="text-secondary font-weight-medium" :class="smAndDown ? 'mt-2 pr-6' : ''">Os nossos produtos
               aceleram
@@ -141,9 +143,39 @@
           <div :class="smAndDown ? 'w-25 mt-8' : ''">
             <v-img src="/public/logo.png" />
           </div>
-
         </v-img>
       </div>
+
+      <div class="d-flex">
+        <div :class="smAndDown ? 'w-50 h-100 pt-10 pb-10 pl-2' : ''">
+
+          <h3 class="text-secondary">FALE CONOSCO</h3>
+          <h6 style="font-size: 7px;">Como podemos ajudar o seu negócio?</h6>
+          <h6 :class="smAndDown ? 'mt-2' : ''"><v-icon size="x-small">mdi-email</v-icon> contato@fertvida.com.br</h6>
+
+          <div :class="smAndDown ? 'pt-5' : ''">
+            <h6 class="text-quartiary">Nosso Contato</h6>
+            <h6 :class="smAndDown ? 'mt-2' : ''"><v-icon size="x-small">mdi-phone</v-icon> xxxxxxxxxx</h6>
+            <h6 :class="smAndDown ? 'mt-2' : ''"><v-icon size="x-small">mdi-instagram</v-icon> xxxxxxxxxx</h6>
+            
+          </div>
+
+        </div>
+
+        <div class="bg-primary"  :class="smAndDown ? 'w-50' : ''">
+
+        </div>
+      </div>
+
+
+        <v-footer class="bg-primary">
+          <div align="center" :class="smAndDown ? 'w-100' : ''">
+            <v-img src="/public/logo.png" width="50" />
+          </div>
+        </v-footer>
+
+
+
 
 
 
@@ -173,18 +205,4 @@ import AppBar from '@/components/AppBar.vue'
 import { useDisplay } from 'vuetify';
 
 const { smAndDown, smAndUp, lgAndUp, mdAndUp } = useDisplay()
-
-const scrollToSection = (sectionId) => {
-  const element = document.getElementById(sectionId);
-
-  if (element) {
-    const offset = 200; // Ajuste aqui conforme necessário
-    const elementPosition = element.getBoundingClientRect().top + window.scrollY;
-    window.scrollTo({
-      top: elementPosition - offset,
-      behavior: 'smooth',
-    });
-  }
-};
-
 </script>
