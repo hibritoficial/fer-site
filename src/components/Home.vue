@@ -30,29 +30,29 @@
           </div>
         </v-img>
       </div>
-       
-      <div id="sobre" fluid>
-      <div class="d-flex" :class="smAndDown ? 'mb-3' : ''">
-        <div :class="smAndDown ? 'w-100 pl-2 pt-4' : ''">
-          <h3 class="text-primary font-weight-medium">Sobre nós</h3>
-          <h6 class="text-secondary font-weight-medium" :class="smAndDown ? 'mt-2 pr-6' : ''"><span
-              class="text-quartiary font-weight-bold">FERTVIDA</span> é uma linha de aditivos e fertilizantes orgânicos,
-            com uma fórmula inovadora que contém complexos
-            enzimáticos, carboidratos, proteínas e quitinas.</h6>
 
-          <div>
-            <v-btn size="x-small" class="rounded-pill bg-quartiary mt-2 px-5">
-              <h6 class="text-white">CONHEÇA MAIS</h6>
-            </v-btn>
+      <div id="sobre" fluid>
+        <div class="d-flex" :class="smAndDown ? 'mb-3' : ''">
+          <div :class="smAndDown ? 'w-100 pl-2 pt-4' : ''">
+            <h3 class="text-primary font-weight-medium">Sobre nós</h3>
+            <h6 class="text-secondary font-weight-medium" :class="smAndDown ? 'mt-2 pr-6' : ''"><span
+                class="text-quartiary font-weight-bold">FERTVIDA</span> é uma linha de aditivos e fertilizantes orgânicos,
+              com uma fórmula inovadora que contém complexos
+              enzimáticos, carboidratos, proteínas e quitinas.</h6>
+
+            <div>
+              <v-btn size="x-small" class="rounded-pill bg-quartiary mt-2 px-5">
+                <h6 class="text-white">CONHEÇA MAIS</h6>
+              </v-btn>
+            </div>
+          </div>
+
+          <div :class="smAndDown ? 'w-75 mr-2 mt-3' : ''">
+            <v-img src="/public/fotosobre.png"></v-img>
           </div>
         </div>
-
-        <div :class="smAndDown ? 'w-75 mr-2 mt-3' : ''">
-          <v-img src="/public/fotosobre.png"></v-img>
-        </div>
       </div>
-    </div>
-        
+
       <div class="degrade bg-primary" align="center">
         <div class="text-terciary" style="line-height: 25px;" :class="smAndDown ? 'pt-16' : ''">
           <h2>NOSSO</h2>
@@ -102,29 +102,29 @@
       </div>
 
       <div class="d-flex" :class="smAndDown ? 'mb-6' : ''">
-        
-          <div :class="smAndDown ? 'w-100 pl-2 pt-4' : ''">
-            <h3 class="text-primary font-weight-medium">O Nosso Produto</h3>
-            <h6 class="text-secondary font-weight-medium" :class="smAndDown ? 'mt-2 pr-6' : ''">Os nossos produtos
-              aceleram
-              a decomposição, fornecem nutrientes essenciais e promovem a sustentabilidade agrícola.</h6> 
-       
-            <div align="center" :class="smAndDown ? 'w-75 mt-8' : ''">
-              <h6 style="font-size: 8px;">Obtenha de forma <span class="text-quartiary">GRATUITA </span> a ficha técnica
-                do
-                nosso produto!</h6>
-              <v-btn size="x-small" class="rounded-pill bg-quartiary mt-2 px-5">
-                <h6 class="text-white">FAZER DONWLOAD</h6>
-              </v-btn>
-            </div>
-          </div>
 
-          <div :class="smAndDown ? 'w-100 mr-2 mt-3' : ''">
-            <v-img src="/public/fotoproduto.jpg"></v-img>
-          </div> 
-        
+        <div :class="smAndDown ? 'w-100 pl-2 pt-4' : ''">
+          <h3 class="text-primary font-weight-medium">O Nosso Produto</h3>
+          <h6 class="text-secondary font-weight-medium" :class="smAndDown ? 'mt-2 pr-6' : ''">Os nossos produtos
+            aceleram
+            a decomposição, fornecem nutrientes essenciais e promovem a sustentabilidade agrícola.</h6>
+
+          <div align="center" :class="smAndDown ? 'w-75 mt-8' : ''">
+            <h6 style="font-size: 8px;">Obtenha de forma <span class="text-quartiary">GRATUITA </span> a ficha técnica
+              do
+              nosso produto!</h6>
+            <v-btn size="x-small" class="rounded-pill bg-quartiary mt-2 px-5">
+              <h6 class="text-white">FAZER DONWLOAD</h6>
+            </v-btn>
+          </div>
+        </div>
+
+        <div :class="smAndDown ? 'w-100 mr-2 mt-3' : ''">
+          <v-img src="/public/fotoproduto.jpg"></v-img>
+        </div>
+
       </div>
-    
+
 
       <div class="jsutify-center align-center text-center" :class="smAndDown ? 'w-100' : ''">
         <v-img src="/public/capa3.jpg" align="center" cover>
@@ -146,33 +146,63 @@
         </v-img>
       </div>
 
-      <div class="d-flex">
-        <div :class="smAndDown ? 'w-50 h-100 pt-10 pb-10 pl-2' : ''">
 
-          <h3 class="text-secondary">FALE CONOSCO</h3>
-          <h6 style="font-size: 7px;">Como podemos ajudar o seu negócio?</h6>
-          <h6 :class="smAndDown ? 'mt-2' : ''"><v-icon size="x-small">mdi-email</v-icon> contato@fertvida.com.br</h6>
+      <div align="center" :class="smAndDown ? 'w-100 pt-10 pb-10' : ''">
 
-          <div :class="smAndDown ? 'pt-5' : ''">
-            <h6 class="text-quartiary">Nosso Contato</h6>
-            <h6 :class="smAndDown ? 'mt-2' : ''"><v-icon size="x-small">mdi-phone</v-icon> xxxxxxxxxx</h6>
-            <h6 :class="smAndDown ? 'mt-2' : ''"><v-icon size="x-small">mdi-instagram</v-icon> xxxxxxxxxx</h6>
-            
+        <h2 class="text-secondary">FALE CONOSCO</h2>
+        <h5 class="font-weight-medium">Como podemos ajudar o seu negócio?</h5>
+        <h5 :class="smAndDown ? 'mt-2' : ''"><v-icon size="x-small">mdi-email</v-icon> contato@fertvida.com.br</h5>
+
+        <div :class="smAndDown ? 'pt-5' : ''">
+          <h3 class="text-quartiary">Nosso Contato</h3>
+          <h5 :class="smAndDown ? 'mt-2' : ''"><v-icon size="x-small">mdi-phone</v-icon> xxxxxxxxxx</h5>
+          <h5 :class="smAndDown ? 'mt-2' : ''"><v-icon size="x-small">mdi-instagram</v-icon> xxxxxxxxxx</h5>
+        </div>
+
+      </div>
+
+      <div class="bg-secondary" align="center" :class="smAndDown ? 'w-100 pt-10' : ''">
+        <h4 class="font-weight-bold pb-10 px-5" style="font-size: 48px;">COMO PODEMOS AJUDAR O SEU NEGÓCIO?</h4>
+
+        <v-form v-model="valid">
+          <v-container>
+            <v-row>
+              <v-col cols="12" sm="10">
+                <v-text-field v-model="nome" :rules="nomeRules" label="Nome" color="quartiary"
+                  hint="Informe seu nome"></v-text-field>
+              </v-col>
+
+              <v-col cols="12" md="10">
+                <v-text-field v-model="Email" :rules="emailRules" label="Email" placeholder="email@email.com.br"
+                  hint="Informe seu E-mail" color="quartiary"></v-text-field>
+              </v-col>
+
+              <v-col cols="12" md="10">
+                <v-text-field v-model="Senha" :rules="senhaRules" label="WhatsApp" color="quartiary"
+                  hint="Informe seu WhatsApp"></v-text-field>
+              </v-col>
+
+              <v-col cols="12" md="10">
+                <v-text-field v-model="RepitirSenha" :rules="repitirsenhaRules" label="Mensagem" color="quartiary"
+                  hint="Informe sua mensagem"></v-text-field>
+              </v-col>
+            </v-row>
+          </v-container>
+
+          <div :class="smAndDown ? 'w-100 pt-5 pb-10' : ''">
+            <v-btn class="bg-quartiary px-16 rounded-pill"><h3 class="text-white">ENVIAR</h3></v-btn>
           </div>
+        </v-form>
 
-        </div>
-
-        <div class="bg-primary"  :class="smAndDown ? 'w-50' : ''">
-
-        </div>
       </div>
 
 
-        <v-footer class="bg-primary">
-          <div align="center" :class="smAndDown ? 'w-100' : ''">
-            <v-img src="/public/logo.png" width="50" />
-          </div>
-        </v-footer>
+
+      <v-footer class="bg-primary">
+        <div align="center" :class="smAndDown ? 'w-100' : ''">
+          <v-img src="/public/logo.png" width="50" />
+        </div>
+      </v-footer>
 
 
 
@@ -203,6 +233,52 @@
 <script setup>
 import AppBar from '@/components/AppBar.vue'
 import { useDisplay } from 'vuetify';
+import { ref } from 'vue';
 
 const { smAndDown, smAndUp, lgAndUp, mdAndUp } = useDisplay()
+const valid = ref(false);
+
+const nome = ref('');
+const nomeRules = ref([
+  value => {
+    if (value) return true;
+    return 'É necessário inserir um Nome.';
+  },
+  value => {
+    if (value?.length <= 50) return true;
+    return 'Insira um nome de no minimo 3 letras.';
+  },
+]);
+
+const Email = ref('');
+const emailRules = ref([
+  value => {
+    if (value) return true;
+    return 'É necessário inserir um E-mail.';
+  },
+  value => {
+    if (/.+@.+\..+/.test(value)) return true;
+    return 'E-mail deve ser válido.';
+  },
+]);
+
+const Senha = ref('');
+const senhaRules = ref([
+  value => {
+    if (value) return true;
+    return 'É necessário inserir um Número';
+  },
+  value => {
+    if (/.+@.+\..+/.test(value)) return true;
+    return 'O número deve ser válido.';
+  },
+]);
+
+const RepitirSenha = ref('');
+const repitirsenhaRules = ref([
+  value => {
+    if (value) return true;
+    return 'É necessário inserir uma Mensagem.';
+  },
+]);
 </script>
