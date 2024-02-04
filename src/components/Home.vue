@@ -5,7 +5,7 @@
       <div>
         <v-img src="/public/capa1.jpg" cover>
           <div class="transparente1" style="line-height: 18px;" align="center"
-            :class="smAndDown ? 'w-50 h-100 pt-4' : 'w-50 h-100 pt-8'">
+            :class="smAndDown ? 'w-50 h-100 pt-4' : 'w-50 h-100 pt-8 mb-10'">
             <h5 class="text-white font-weight-medium text-sm-h4 text-md-h3" :class="smAndDown ? '' : ''">DESCUBRA</h5>
             <h5 class="text-white font-weight-medium text-sm-h4 text-md-h3" :class="smAndDown ? '' : ''">O <span
                 class="text-terciary">PODER</span> DA <span class="text-terciary">VIDA</span></h5>
@@ -62,7 +62,7 @@
       </div>
 
       <div id="sobre">
-        <div class="d-flex" :class="smAndDown ? 'mb-3' : ''">
+        <div class="d-flex" :class="smAndDown ? 'mb-3' : 'mb-3 mt-3'">
           <div class="d-sm-none" :class="smAndDown ? 'w-100 pl-2 pt-4' : ''">
             <h3 class="text-primary font-weight-medium text-sm-h4">Sobre nós</h3>
             <h6 class="text-secondary font-weight-medium text-sm-h5" :class="smAndDown ? 'mt-1 pr-6' : ''"><span
@@ -71,13 +71,13 @@
               enzimáticos, carboidratos, proteínas e quitinas.</h6>
 
             <div>
-              <v-btn size="x-small" class="rounded-pill bg-quartiary mt-2 px-5">
+              <v-btn href="#diferencial" size="x-small" class="rounded-pill bg-quartiary mt-2 px-5">
                 <h6 class="text-white">CONHEÇA MAIS</h6>
               </v-btn>
             </div>
           </div>
 
-          <div class="d-none d-sm-block" :class="smAndDown ? 'w-100 pl-4 pt-4' : 'pl-8 pt-16'">
+          <div class="d-none d-sm-block" :class="smAndDown ? 'w-100 pl-4 pt-4' : 'pl-8 pt-16 pr-16'">
             <h3 class="text-primary font-weight-medium text-sm-h4 text-md-h3" :class="smAndDown ? 'pt-4' : ''">Sobre nós
             </h3>
             <h6 class="text-secondary font-weight-medium text-sm-h6 text-md-h5"
@@ -87,7 +87,7 @@
               enzimáticos, carboidratos, proteínas e quitinas.</h6>
 
             <div>
-              <v-btn size="large" class="rounded-pill bg-quartiary mt-5 ml-4 px-16"
+              <v-btn href="#diferencial" size="large" class="rounded-pill bg-quartiary mt-5 ml-4 px-16"
                 :class="smAndDown ? '' : 'mt-16 w-50'">
                 <h5 class="text-white">CONHEÇA MAIS</h5>
               </v-btn>
@@ -100,14 +100,14 @@
         </div>
       </div>
 
-      <div class="degrade bg-primary" align="center">
+      <div id="diferencial" class="degrade bg-primary" align="center">
         <div class="d-sm-none text-terciary" style="line-height: 25px;" :class="smAndDown ? 'pt-16' : ''">
           <h2>NOSSO</h2>
           <p />
           <h2>DIFERENCIAL</h2>
         </div>
 
-        <div class="d-none d-sm-block text-terciary text-sm-h4" style="line-height: 50px;"
+        <div id="diferencial" class="d-none d-sm-block text-terciary text-sm-h4" style="line-height: 50px;"
           :class="smAndDown ? 'pt-16' : 'pt-16'">
           <h2>NOSSO</h2>
           <p />
@@ -146,54 +146,54 @@
               equilibrado e resistente.</h6>
           </div>
         </div>
-      
+
         <div class="d-flex justify-space-between mt-16 mb-16">
 
-          <div class="text-sm-h5 w-25 text-center">
+          <div class="text-sm-h5 w-25 text-center d-none d-md-block">
             <v-img src="/public/aceleraçao.png"></v-img>
             <h4>+ Aceleração</h4>
             <h6 class="text-terciary px-16">Favorece a decomposição rápida de resíduos
               orgânicos.</h6>
           </div>
 
-          <div class="text-sm-h5 w-25">
+          <div class="text-sm-h5 w-25 d-none d-md-block">
             <v-img src="/public/nutriçao.png"></v-img>
             <h4>+ Nutrição</h4>
             <h6 class="text-terciary px-16">Enriquece o solo com complexos enzimáticos,
               carboidratos e proteínas.</h6>
           </div>
 
-          
-          <div class="text-sm-h5 w-25">
+
+          <div class="text-sm-h5 w-25 d-none d-md-block">
             <v-img src="/public/sustentabilidade.png"></v-img>
             <h4>+ Sustentabilidade</h4>
             <h6 class="text-terciary px-16">Promove práticas agrícolas ecológicas.</h6>
           </div>
 
-          <div class="text-sm-h5 w-25">
+          <div class="text-sm-h5 w-25 d-none d-md-block">
             <v-img src="/public/estabilidade.png"></v-img>
             <h4>+ Estabilidade</h4>
             <h6 class="text-terciary px-16">Contribui para a formação de um solo mais
               equilibrado e resistente.</h6>
           </div>
         </div>
-        
+
 
 
         <div class="d-sm-none" :class="smAndDown ? 'pt-10 pb-10' : ''">
-          <v-btn size="small" class="bg-quartiary rounded-pill px-16">
+          <v-btn href="#produto" size="small" class="bg-quartiary rounded-pill px-16">
             <h6 class="text-white">CONHEÇA O PRODUTO</h6>
           </v-btn>
         </div>
 
         <div class="d-none d-sm-block" :class="smAndDown ? 'pt-16 pb-16' : 'mt-16 pt-16 pb-16'">
-          <v-btn size="large" class="bg-quartiary rounded-pill px-16" :class="smAndDown ? '' : 'w-50'">
+          <v-btn href="#produto" size="large" class="bg-quartiary rounded-pill px-16" :class="smAndDown ? '' : 'w-50'">
             <h5 class="text-white">CONHEÇA O PRODUTO</h5>
           </v-btn>
         </div>
       </div>
 
-      <div class="d-flex" :class="smAndDown ? 'mb-6' : ''">
+      <div id="produto" class="d-flex" :class="smAndDown ? 'mb-6' : ''">
         <div class="d-sm-none" :class="smAndDown ? 'w-100 pl-2 pt-4' : ''">
           <h3 class="text-primary font-weight-medium">O Nosso Produto</h3>
           <h6 class="text-secondary font-weight-medium" :class="smAndDown ? 'mt-2 pr-6' : ''">Os nossos produtos
@@ -210,31 +210,33 @@
           </div>
         </div>
 
-        <div class="d-none d-sm-block" :class="smAndDown ? 'w-100 pl-4 pt-8' : ''">
-          <h3 class="text-primary font-weight-medium text-sm-h4">O Nosso Produto</h3>
-          <h6 class="text-secondary font-weight-medium text-sm-h6" :class="smAndDown ? 'mt-2 pr-6' : ''">Os nossos
+        <div id="produto" class="d-none d-sm-block" :class="smAndDown ? 'w-100 pl-4 pt-8' : 'pt-16 pl-8 pr-16'">
+          <h3 class="text-primary font-weight-medium text-sm-h4 text-md-h3">O Nosso Produto</h3>
+          <h6 class="text-secondary font-weight-medium text-sm-h6 text-md-h5"
+            :class="smAndDown ? 'mt-2 pr-6' : 'pt-6 pr-16'">Os nossos
             produtos
             aceleram
             a decomposição, fornecem nutrientes essenciais e promovem a sustentabilidade agrícola.</h6>
 
-          <div align="center" :class="smAndDown ? 'w-75 mt-8' : ''">
-            <h6 style="font-size: 9px;">Obtenha de forma <span class="text-quartiary">GRATUITA </span> a ficha técnica
+          <div align="center" :class="smAndDown ? 'w-75 mt-8' : 'pt-16 mt-16 pr-16 mr-16'">
+            <h6 class="text-md-h6" :class="smAndDown ? '' : 'mr-16'" style="font-size: 9px;">Obtenha de forma <span
+                class="text-quartiary">GRATUITA </span> a ficha técnica
               do
               nosso produto!</h6>
-            <v-btn size="large" class="rounded-pill bg-quartiary mt-3 px-16">
+
+            <v-btn size="large" class="rounded-pill bg-quartiary mt-3 px-16" :class="smAndDown ? '' : 'mr-16 w-75'">
               <h6 class="text-white">FAZER DOWNLOAD</h6>
             </v-btn>
           </div>
         </div>
 
-        <div :class="smAndDown ? 'w-100 mr-2 mt-3' : ''">
+        <div :class="smAndDown ? 'w-100 mr-2 mt-3' : 'w-75 pt-3 pb-3 pr-3'">
           <v-img src="/public/fotoproduto.jpg"></v-img>
         </div>
 
       </div>
 
-
-      <div class="jsutify-center align-center text-center" :class="smAndDown ? 'w-100' : ''">
+      <div class="jsutify-center align-center text-center d-md-none" :class="smAndDown ? 'w-100' : ''">
         <v-img src="/public/capa3.jpg" align="center" cover>
 
           <div class="transparente2 d-sm-none" :class="smAndDown ? 'h-50 mt-16 pt-5' : ''">
@@ -242,7 +244,7 @@
             <p class="text-terciary"><em>O futuro sustentável para a sua plantação.</em></p>
 
             <div :class="smAndDown ? 'mt-5' : ''">
-              <v-btn class="rounded-pill bg-quartiary">
+              <v-btn href="#faleconosco" class="rounded-pill bg-quartiary">
                 <h6 class="text-white">FALE CONOSCO</h6>
               </v-btn>
             </div>
@@ -254,7 +256,7 @@
             <p class="text-terciary text-sm-h5 mt-2"><em>O futuro sustentável para a sua plantação.</em></p>
 
             <div :class="smAndDown ? 'mt-16' : ''">
-              <v-btn size="large" class="rounded-pill bg-quartiary px-16">
+              <v-btn href="#faleconosco" size="large" class="rounded-pill bg-quartiary px-16">
                 <h5 class="text-white">FALE CONOSCO</h5>
               </v-btn>
             </div>
@@ -267,47 +269,66 @@
         </v-img>
       </div>
 
+      <div class="d-none d-md-block">
+        <v-img src="/public/capa3desktop.jpg" class="pt-16" align="center" cover height="800">
 
-      <div align="center" :class="smAndDown ? 'w-100 pt-10 pb-10' : ''">
+          <div class="transparente2 h-75 mt-16">
+            <h1 class="font-weight-medium text-white text-md-h1 pt-16">FERT<span class="text-quintenary">VIDA</span></h1>
+            <p class="text-terciary pt-5 text-md-h4"><em>O futuro sustentável para a sua plantação.</em></p>
 
-        <h2 class="text-secondary text-sm-h3">FALE CONOSCO</h2>
-        <h5 class="font-weight-medium text-sm-h6">Como podemos ajudar o seu negócio?</h5>
+            <div class="mt-16">
+              <v-btn href="#faleconosco" size="x-large" class="rounded-pill bg-quartiary w-50 mt-16">
+                <h6 class="text-white">FALE CONOSCO</h6>
+              </v-btn>
+            </div>
+          </div>
+          <v-img width="100" class="mt-5" src="/public/logo.png" />
+        </v-img>
+      </div>
+
+
+
+
+      <div id="faleconosco" align="center" :class="smAndDown ? 'w-100 pt-10 pb-10' : 'pt-16 pb-16'">
+
+        <h2 class="text-secondary text-sm-h3 text-md-h4">FALE CONOSCO</h2>
+        <h5 class="font-weight-medium text-sm-h6 text-md-h6" :class="smAndDown ? '' : 'pt-3'">Como podemos ajudar o seu negócio?</h5>
         <h5 class="text-sm-h6" :class="smAndDown ? 'mt-2' : ''"><v-icon size="x-small">mdi-email</v-icon>
           contato@fertvida.com.br</h5>
 
-        <div :class="smAndDown ? 'pt-5' : ''">
-          <h3 class="text-quartiary text-sm-h4">Nosso Contato</h3>
-          <h5 class="text-sm-h6" :class="smAndDown ? 'mt-2' : ''"><v-icon size="x-small">mdi-phone</v-icon> xxxxxxxxxx
+        <div :class="smAndDown ? 'pt-5' : 'pt-10'">
+          <h3 class="text-quartiary text-sm-h4 text-md-h4">Nosso Contato</h3>
+          <h5 class="text-sm-h6" :class="smAndDown ? 'mt-2' : 'text-h6'"><v-icon size="x-small">mdi-phone</v-icon> xxxxxxxxxx
           </h5>
-          <h5 class="text-sm-h6" :class="smAndDown ? 'mt-2' : ''"><v-icon size="x-small">mdi-instagram</v-icon> xxxxxxxxxx
+          <h5 class="text-sm-h6" :class="smAndDown ? 'mt-2' : 'text-h6'"><v-icon size="x-small">mdi-instagram</v-icon> xxxxxxxxxx
           </h5>
         </div>
 
       </div>
 
-      <div class="bg-secondary" align="center" :class="smAndDown ? 'w-100 pt-10' : ''">
+      <div class="bg-secondary" align="center" :class="smAndDown ? 'w-100 pt-10' : 'pt-16 pb-16'">
         <h4 class="font-weight-bold text-sm-h4 pb-10 px-5" style="font-size: 48px;">COMO PODEMOS AJUDAR O SEU NEGÓCIO?
         </h4>
 
         <v-form v-model="valid">
           <v-container>
             <v-row>
-              <v-col cols="12" sm="12">
+              <v-col cols="12" sm="12" md="12">
                 <v-text-field v-model="nome" :rules="nomeRules" label="Nome" color="quartiary"
                   hint="Informe seu nome"></v-text-field>
               </v-col>
 
-              <v-col cols="12" sm="12" md="10">
+              <v-col cols="12" sm="12" md="12">
                 <v-text-field v-model="Email" :rules="emailRules" label="Email" placeholder="email@email.com.br"
                   hint="Informe seu E-mail" color="quartiary"></v-text-field>
               </v-col>
 
-              <v-col cols="12" sm="12" md="10">
+              <v-col cols="12" sm="12" md="12">
                 <v-text-field v-model="WhatsApp" :rules="WhatsAppRules" label="WhatsApp" color="quartiary"
                   hint="Informe seu WhatsApp"></v-text-field>
               </v-col>
 
-              <v-col cols="12" sm="12" md="10">
+              <v-col cols="12" sm="12" md="12">
                 <v-text-field v-model="Mensagem" :rules="MensagemRules" label="Mensagem" color="quartiary"
                   hint="Informe sua mensagem"></v-text-field>
               </v-col>
@@ -321,7 +342,7 @@
           </div>
 
           <div class="d-none d-sm-block" :class="smAndDown ? 'w-100 pt-5 pb-10' : ''">
-            <v-btn size="large" class="bg-quartiary px-16 rounded-pill">
+            <v-btn size="large" class="bg-quartiary px-16 rounded-pill" :class="smAndDown ? '' : 'w-50 mt-8 mb-10'">
               <h5 class="text-white">ENVIAR</h5>
             </v-btn>
           </div>
@@ -332,7 +353,7 @@
 
 
       <v-footer class="bg-primary">
-        <div align="center" :class="smAndDown ? 'w-100' : ''">
+        <div align="center" :class="smAndDown ? 'w-100' : 'w-100'">
           <v-img src="/public/logo.png" width="50" />
         </div>
       </v-footer>
@@ -346,6 +367,17 @@
   scroll-margin-top: 100px;
 }
 
+#diferencial {
+  scroll-margin-top: 30px;
+}
+
+#produto {
+  scroll-margin-top: 100px;
+}
+
+#faleconosco {
+  scroll-margin-top: 230px;
+}
 
 
 .transparente1 {
